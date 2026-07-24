@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-07-24",
+  "jurisdiction": "eg",
+  "focus": "Egyptian tax-benefit surface: progressive PIT with phase-out, social insurance contributions under the unified Law 148/2019 regime, VAT and schedule tax, and the Takaful & Karama cash transfers.",
+  "purpose": "Household-level comparison-oracle and supporting-source references for Egypt Axiom coverage. None of these are legal authority.",
+  "oracle_scope": "A RuleSpec oracle must be an executable, pinned external calculator that accepts household-level inputs and returns household-level tax-benefit outputs comparable to Axiom outputs. Aggregate simulators, distributional reports, parameter documentation, and public model summaries are supporting references only, not oracles.",
+  "oracles": [
+    {
+      "id": "egymod",
+      "name": "EGYMOD",
+      "url": "https://www.wider.unu.edu/project/southmod-simulating-tax-and-benefit-policies-development",
+      "local_path": "~/.axiom/oracles/southmod/bundle/ (licensed, non-redistributable; never committed)",
+      "commit": null,
+      "model": "EGYMOD v1.0 (SOUTHMOD; EUROMOD platform)",
+      "dataset": "HIECS-based input microdata (shipped with the licensed bundle where included)",
+      "role": "Household-level tax-benefit comparison oracle for Egypt. Policy years 2019-25. Report CR-EGYMOD-v1.0 (UNU-WIDER).",
+      "coverage": [
+        "personal_income_tax_phase_out",
+        "social_insurance_contributions",
+        "vat_schedule_tax",
+        "takaful_karama",
+        "household_disposable_income"
+      ],
+      "authority": "wiring_pending",
+      "availability_check": {
+        "checked_at": "2026-07-24",
+        "status": "wiring_pending",
+        "detail": "The locally held licensed SOUTHMOD bundle (EUROMOD runtime proven on the Ghana and Rwanda lanes) must be inventoried for EGYMOD EG systems before wiring. Validation frame: EGYMOD v1.0, policy years 2019-25."
+      },
+      "bundle_sha256": null
+    }
+  ]
+}
