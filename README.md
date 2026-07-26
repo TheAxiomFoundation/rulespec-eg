@@ -25,3 +25,7 @@ Policy must come from the furthest upstream available source: Official Gazette (
 ## Parity program
 
 Tracked on issue #1: tranche-2 captures (Law 12/2025 Takaful & Karama codification - no publicly hosted official copy located yet; PIT amendment Laws 97/2018, 26/2020, 30/2023, 7/2024; Law 79/1975 predecessor social insurance; VAT schedule-tax amendments; Takaful & Karama executive regulation) and EGYMOD parity tests per instrument.
+
+## Status
+
+Tranche-1 full-document encode completed 2026-07-24 (21 kitab/bab slices; 134 rules, 19/21 slices compiled, companion tests 41/41 under the engine-currencies build). Per-slice results and the two fail-closed rejections (encode#1265; the issuance grounding rejection) are recorded in the session status file and issue #1.
