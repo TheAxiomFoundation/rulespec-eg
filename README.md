@@ -29,3 +29,11 @@ Tracked on issue #1: tranche-2 captures (Law 12/2025 Takaful & Karama codificati
 ## Status
 
 Tranche-1 full-document encode completed 2026-07-24 (21 kitab/bab slices; 134 rules, 19/21 slices compiled, companion tests 41/41 under the engine-currencies build). Per-slice results and the two fail-closed rejections (encode#1265; the issuance grounding rejection) are recorded in the session status file and issue #1.
+
+## Listing gates
+
+This repo carries `app_visibility = "experimental"` in `.axiom/registry.toml` and stays out of app surfaces until:
+
+1. The encoded surface covers the flagship calculation (personal income tax gross-to-net for a formal employee) end to end with companion tests.
+2. Oracle parity suites exist and pass against EGYMOD for the encoded surface.
+3. Citation paths are stable (law-number form, Law 91/2005 style, against the Official Gazette prints).
